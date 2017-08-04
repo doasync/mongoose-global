@@ -13,6 +13,7 @@ function fn (dbURI, options = {}) {
 Object.defineProperties(fn, {
   mongoose: {value: mongoose},
   connect: {value: fn},
+  Schema: {value: mongoose.Schema},
 });
 
 module.exports = fn;
